@@ -1,0 +1,215 @@
+:root {
+    --color-sedans-background: hsl(31, 77%, 52%);
+    --color-suvs-background: hsl(184, 100%, 22%);
+    --color-luxury-background: hsl(179, 100%, 13%);
+    --color-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --color-white: hsla(0, 0%, 100%, 1);
+    --color-light-grey: hsl(0, 0%, 95%);
+    --color-sedan-paragraph: hsla(38, 100%, 76%, 1);
+    --color-suvs-paragraph: hsla(185, 75%, 81%, 1);
+    --color-luxury-paragraph: hsla(180, 17%, 53%, 1);
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    text-size-adjust: none;
+  }
+  
+  body,
+  h2,
+  p {
+    margin-block-end: 0;
+  }
+  
+  body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--color-light-grey);
+  }
+  
+  h2,
+  button {
+    line-height: 1.1;
+  }
+  
+  main {
+    width: 90%; 
+    max-width: 800px;
+    display: grid;
+    margin: auto;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 300px;
+    padding: 20px;
+    height: 450px;
+    gap: 30px;
+  }
+  
+  .sedan,
+  .suvs,
+  .luxury {
+    width: 100%; 
+  }
+
+  .sedan{
+    background: var(--color-sedans-background);
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .suvs{
+    background: var(--color-suvs-background);
+    border-radius: 0px;
+  }
+
+  .luxury{
+    background: var(--color-luxury-background);
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+  .card img {
+    width: 80px;
+    height: auto;
+  }
+  
+  .card h2 {
+    color: var(--color-white);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .card-paragraph-sedan,
+  .card-paragraph-suvs,
+  .card-paragraph-luxury {
+    font-size: 1rem;
+  }
+
+  .card-paragraph-sedan {
+    color: var(--color-sedan-paragraph);
+  }
+
+  .card-paragraph-suvs {
+    color: var(--color-suvs-paragraph);
+  }
+
+  .card-paragraph-luxury {
+    color: var(--color-luxury-paragraph);
+  }
+  
+  .card-button-sedans,
+  .card-button-suvs,
+  .card-button-luxury {
+    display: inline-block;
+    width: 153px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: none;
+    background: var(--color-white);
+    font-size: 1rem;
+  }
+
+  .card-button-sedans{
+      background: var(--color-white);
+      color: var(--color-sedans-background);
+  }
+
+  .card-button-suvs{
+    background: var(--color-white);
+    color: var(--color-suvs-background);
+}
+
+.card-button-luxury{
+    background: var(--color-white);
+    color: var(--color-luxury-background);
+}
+  
+  .card-button-sedans:hover,
+  .card-button-sedans:focus-visible {
+    background: var(--color-sedans-background);
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+  }
+
+  .card-button-suvs:hover,
+  .card-button-suvs:focus-visible {
+    background: var(--color-suvs-background);
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+  }
+
+  .card-button-luxury:hover,
+  .card-button-luxury:focus-visible {
+    background: var(--color-luxury-background);
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+  }
+
+  .card-button-sedans:hover,
+  .card-button-sedans:focus-visible,
+  .card-button-suvs:hover,
+  .card-button-suvs:focus-visible,
+  .card-button-luxury:hover,
+  .card-button-luxury:focus-visible {
+    cursor: pointer;
+  }
+  
+  footer {
+    color: var(--color-luxury-background);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  @media (max-width: 48rem) {
+    main {
+      grid-template-columns: 1fr;
+
+    }
+
+    footer {
+      margin-top: 1rem;
+    }
+  }
+  
+  @media (min-width: 48rem) and (max-width: 64rem) {
+    main {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    footer {
+      margin-top: 1rem;
+    }
+  }
+  
+  @media (min-width: 65rem) and (max-width: 75rem) {
+    main {
+      grid-template-columns: repeat(3, 1fr); 
+    }
+  
+    footer {
+      margin-top: 1rem;
+    }
+  }
+  
+  @media (min-width: 76rem) {
+    main {
+      grid-template-columns: repeat(3, 1fr); 
+    }
+  
+    footer {
+      margin-top: 1rem;
+    }
+  }
