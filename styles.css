@@ -31,6 +31,8 @@
     line-height: 1.5;
     font-family: 'Lexend Deca', sans-serif;
     background-color: var(--color-light-grey);
+    display: grid;
+    place-content: center;
   }
   
   h2,
@@ -40,9 +42,10 @@
   
   main {
     width: 90%; 
-    max-width: 800px;
+    max-width: 874px;
     display: grid;
     margin: auto;
+    
   }
   
   .card {
@@ -52,7 +55,7 @@
     max-width: 300px;
     padding: 20px;
     height: 450px;
-    gap: 30px;
+    gap: 25px;
   }
   
   .sedan,
@@ -176,7 +179,7 @@
   @media (max-width: 48rem) {
     main {
       grid-template-columns: 1fr;
-
+      padding: 0.2rem;
     }
 
     footer {
