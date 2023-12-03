@@ -42,7 +42,7 @@
   
   main {
     width: 90%; 
-    max-width: 874px;
+    max-width: 54.625rem;
     display: grid;
     margin: auto;
     
@@ -52,10 +52,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 300px;
-    padding: 20px;
-    height: 450px;
-    gap: 25px;
+    max-width: 18.75rem;
+    padding: 1.25rem;
+    height: 28.125rem;
+    gap: 1.563rem;
   }
   
   .sedan,
@@ -66,21 +66,21 @@
 
   .sedan{
     background: var(--color-sedans-background);
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 0.625rem 0rem 0rem 0.625rem;
   }
 
   .suvs{
     background: var(--color-suvs-background);
-    border-radius: 0px;
+    border-radius: 0rem;
   }
 
   .luxury{
     background: var(--color-luxury-background);
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0rem 0.625rem 0.625rem 0rem;
   }
   
   .card img {
-    width: 80px;
+    width: 5rem;
     height: auto;
   }
   
@@ -114,10 +114,10 @@
   .card-button-suvs,
   .card-button-luxury {
     display: inline-block;
-    width: 153px;
-    padding: 10px;
-    margin-top: 20px;
-    border-radius: 30px;
+    width: 9.563rem;
+    padding: 0.625rem;
+    margin-top: 1.25rem;
+    border-radius: 1.875rem;
     border: none;
     background: var(--color-white);
     font-size: 1rem;
@@ -142,21 +142,21 @@
   .card-button-sedans:focus-visible {
     background: var(--color-sedans-background);
     color: var(--color-white);
-    border: 1px solid var(--color-white);
+    border: 0.063rem solid var(--color-white);
   }
 
   .card-button-suvs:hover,
   .card-button-suvs:focus-visible {
     background: var(--color-suvs-background);
     color: var(--color-white);
-    border: 1px solid var(--color-white);
+    border: 0.063rem solid var(--color-white);
   }
 
   .card-button-luxury:hover,
   .card-button-luxury:focus-visible {
     background: var(--color-luxury-background);
     color: var(--color-white);
-    border: 1px solid var(--color-white);
+    border: 0.063rem solid var(--color-white);
   }
 
   .card-button-sedans:hover,
