@@ -185,6 +185,21 @@
     footer {
       margin-top: 1rem;
     }
+
+    .sedan{
+      background: var(--color-sedans-background);
+      border-radius: 0.625rem 0.625rem 0rem 0rem;
+    }
+  
+    .suvs{
+      background: var(--color-suvs-background);
+      border-radius: 0rem;
+    }
+  
+    .luxury{
+      background: var(--color-luxury-background);
+      border-radius: 0rem 0rem 0.625rem 0.625rem;
+    }
   }
   
   @media (min-width: 48rem) and (max-width: 64rem) {
@@ -194,6 +209,21 @@
   
     footer {
       margin-top: 1rem;
+    }
+
+    .sedan{
+      background: var(--color-sedans-background);
+      border-radius: 0.625rem 0rem 0rem 0.625rem;
+    }
+  
+    .suvs{
+      background: var(--color-suvs-background);
+      border-radius: 0rem;
+    }
+  
+    .luxury{
+      background: var(--color-luxury-background);
+      border-radius: 0rem 0.625rem 0.625rem 0rem;
     }
   }
   
